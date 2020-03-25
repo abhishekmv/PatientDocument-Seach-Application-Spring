@@ -8,9 +8,10 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>simple-search-app-springboot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.qpidhealth.qpid.search</groupId>
+	<artifactId>PatientDocumentSearchApp</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
 	<name>simple-search-app-springboot</name>
 	<description>Patient seach app with sprintg boot</description>
 
