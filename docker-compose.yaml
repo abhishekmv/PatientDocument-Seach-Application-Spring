@@ -2,6 +2,7 @@ version: '3'
 services:
   patientdocumentsearchapp:
         build: .
+        dockerfile: Dockerfile
         ports:
           - 8080:8080
         depends_on:
