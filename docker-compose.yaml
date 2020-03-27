@@ -1,10 +1,10 @@
 version: '3'
 services:
   patientdocumentsearchapp:
+        container_name: patientdocumentsearchapp
         build: .
-        dockerfile: Dockerfile
         ports:
-          - 8080:8080
+          - "8080:8080"
         depends_on:
           - mysqldb
   mysqldb:
@@ -12,7 +12,7 @@ services:
    image: mysql:8.0.19
    restart: always
    environment:
-        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+        - MYSQL_ROOT_PASSWORD=root@123
         - MYSQL_USER=root
         - MYSQL_DATABASE=patientrecord
    volumes:

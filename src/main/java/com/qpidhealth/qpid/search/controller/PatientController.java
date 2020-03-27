@@ -23,6 +23,7 @@ import com.qpidhealth.qpid.search.model.PatientSearch;
 import com.qpidhealth.qpid.search.repository.PatientRepository;
 
 @RestController
+//@Api(value = "API Description")
 @RequestMapping("/patients")
 public class PatientController {
 	
@@ -37,6 +38,7 @@ public class PatientController {
      * Method to check health of API
      * @return Response status
      */
+	//@ApiOperation(value = "It is the patient health API")
     @GetMapping("/health")
     public ResponseEntity<String> healthCheck() {
         return ResponseEntity.ok("Patient API is healthy!!");
