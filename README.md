@@ -1,6 +1,17 @@
 # Patient Document Search Application
 This is a simple search application over a set of patient records. Using this we can case insensitive partial word search over patient data. We can also do other operations such as CRUD patients and for each patient, we can CRUD 'n' medical documents.
 
+### Tech stack
+```
+Spring Boot - v2.1.13
+MySQL - v8.0.19
+Docker
+DockerCompose - v3.0
+Swagger2
+JUnit 4
+Mockito
+```
+
 ### Build and start the docker service on port 8080
 ```
 bash start_app.sh

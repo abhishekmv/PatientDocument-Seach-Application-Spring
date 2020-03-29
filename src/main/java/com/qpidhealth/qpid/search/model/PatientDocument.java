@@ -22,6 +22,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.base.MoreObjects;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "patientdocument")
 public class PatientDocument implements Serializable {
