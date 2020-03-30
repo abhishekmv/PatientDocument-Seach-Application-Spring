@@ -3,8 +3,6 @@ package com.qpidhealth.qpid.search.repository;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -12,6 +10,9 @@ import org.springframework.stereotype.Repository;
 import com.qpidhealth.qpid.search.model.PatientDocsData;
 import com.qpidhealth.qpid.search.model.PatientDocument;
 
+/**
+ * A repository for making database calls for the patient document table
+ */
 @Repository
 public interface PatientDocumentRepository extends JpaRepository<PatientDocument, Long> {
     

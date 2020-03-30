@@ -24,6 +24,9 @@ import com.google.common.base.MoreObjects;
 
 import io.swagger.annotations.ApiModelProperty;
 
+/**
+ * A patient document object class which provides documents associated for each patient 
+ */
 @Entity
 @Table(name = "patientdocument")
 public class PatientDocument implements Serializable {

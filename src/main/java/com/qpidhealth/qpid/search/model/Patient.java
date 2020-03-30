@@ -16,6 +16,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.base.MoreObjects;
 
 
+/**
+ * A patient object class
+ *
+ */
 @Entity
 @Table(name = "patient")
 public class Patient implements Serializable {

@@ -9,6 +9,9 @@ import org.springframework.stereotype.Repository;
 import com.qpidhealth.qpid.search.model.Patient;
 import com.qpidhealth.qpid.search.model.PatientSearch;
 
+/**
+ * A repository for making database calls for the patient table
+ */
 @Repository
 public interface PatientRepository extends JpaRepository<Patient, Long> {
 

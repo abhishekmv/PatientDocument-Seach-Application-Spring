@@ -7,6 +7,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.base.MoreObjects;
 
 
+/**
+ * A patient document data object which has patient and their document details
+ *
+ */
 public class PatientDocsData implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -6,6 +6,9 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.base.MoreObjects;
 
+/**
+ * A patient search object class 
+ */
 public class PatientSearch implements Serializable {
 
     private static final long serialVersionUID = 1L;
