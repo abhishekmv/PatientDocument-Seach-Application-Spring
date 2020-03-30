@@ -38,7 +38,7 @@ curl http://localhost:8080/v2/api-docs; echo
 
 ### GET: Word search all the patient details
 ```
-curl -X GET --header 'Accept: application/json' 'http://localhost:8080/patients/search?query=patient'
+curl -X GET --header 'Accept: application/json' 'http://localhost:8080/patients/search?query=covid'
 ```
 
 ### GET: All the patient details
@@ -58,7 +58,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ### PUT: Update existing patient details
 ```
-curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"patientname": "Johnny Bravo"}' 'http://localhost:8080/patients/1'
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"patientname": "John Bravo"}' 'http://localhost:8080/patients/1'
 ```
 
 ### DELETE: Delete a single patient and all their documents
@@ -80,22 +80,22 @@ curl -X GET --header 'Accept: application/json' 'http://localhost:8080/patient/1
 
 ### GET: A patient document for a single patient
 ```
-curl -X GET --header 'Accept: application/json' 'http://localhost:8080/patient/4/document/2'
+curl -X GET --header 'Accept: application/json' 'http://localhost:8080/patient/1/document/1'
 ```
 
 ### POST: Create a patient document
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"title": "Blood check report","document": " This is the report of a patient named Tim got his blood check today."}' 'http://localhost:8080/patient/5/documents'
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"title": "Blood check report","document": " This is the report of a patient named Tim got his blood check today."}' 'http://localhost:8080/patient/1/documents'
 ```
 
 ### PUT: Update a patient document
 ```
-curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"title": "Physical report","document": "This is the physical report of the patient Jhonny"}' 'http://localhost:8080/patient/1/document/4'
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"title": "Physical report","document": "This is the physical report of the patient Jhonny"}' 'http://localhost:8080/patient/1/document/1'
 ```
 
 ### DELETE: Delete a patient document
 ```
-curl -X DELETE --header 'Accept: application/json' 'http://localhost:8080/patient/3/document/7'
+curl -X DELETE --header 'Accept: application/json' 'http://localhost:8080/patient/1/document/1'
 ```
 
 ## Cleanup metadata and dangling docker containers

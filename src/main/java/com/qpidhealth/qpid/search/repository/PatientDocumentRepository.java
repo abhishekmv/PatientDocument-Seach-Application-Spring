@@ -59,12 +59,13 @@ public interface PatientDocumentRepository extends JpaRepository<PatientDocument
     /**
      * A document for a patient is provided based on the patient and document id
      * 
-     * @param id
+     * @param documentid
      *          A long value
      * @param patientId
      *          A long value
      * @return
      *          A patient's document is returned for a patient and document id combination
      */
-    Optional<PatientDocument> deleteByIdAndPatientId(Long id, Long patientId);
+    @Query("FROM PatientDocument AS pd WHERE pd.id=?1 AND pd.patientid=?2")
+    Optional<PatientDocument> deleteByIdAndPatientId(Long documentid, Long patientId);
 }

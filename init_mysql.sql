@@ -28,7 +28,7 @@ CREATE TABLE `patient` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `patientname` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,6 +37,7 @@ CREATE TABLE `patient` (
 
 LOCK TABLES `patient` WRITE;
 /*!40000 ALTER TABLE `patient` DISABLE KEYS */;
+INSERT INTO `patient` VALUES (1,'Johnny Bravo'),(2,'Tim Cook'),(3,'Elon Musk'),(4,'Michael Dell'),(5,'Jeff B');
 /*!40000 ALTER TABLE `patient` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,7 +56,7 @@ CREATE TABLE `patientdocument` (
   PRIMARY KEY (`id`),
   KEY `FKbsiejp5j810qj70a0mdvmsg7y` (`patientid`),
   CONSTRAINT `FKbsiejp5j810qj70a0mdvmsg7y` FOREIGN KEY (`patientid`) REFERENCES `patient` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,6 +65,7 @@ CREATE TABLE `patientdocument` (
 
 LOCK TABLES `patientdocument` WRITE;
 /*!40000 ALTER TABLE `patientdocument` DISABLE KEYS */;
+INSERT INTO `patientdocument` VALUES (1,' This is the report of a patient named Johnny got his blood check today. Doctor note: The results look to be good. ',1,'Blood check report'),(2,' The report attached to the patient who has got their annual health check-up done. the report seems to be good and there is an improvement. Keep the good work going on',2,'Annual patient physical test report'),(3,' There is no need to worry. COVID-19 test reports have come back negative and you can stop worrying. Stay safe and stay healthy',2,'COVID-19 test report for the patient  Tim Cook'),(4,' There is no need to worry. COVID-19 test reports have come back negative and you can stop worrying. Stay safe and stay healthy',3,'COVID-19 test report for the patient  Elon musk'),(5,' There is no need to worry. COVID-19 test reports have come back negative and you can stop worrying. Stay safe and stay healthy',4,'COVID-19 test report for the patient  Mr. Dell');
 /*!40000 ALTER TABLE `patientdocument` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -76,4 +78,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-24 22:58:52
+-- Dump completed on 2020-03-29 18:14:48
