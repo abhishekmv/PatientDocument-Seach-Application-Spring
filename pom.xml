@@ -13,7 +13,7 @@
 	<version>1.0</version>
 	<packaging>jar</packaging>
 	<name>simple-search-app-springboot</name>
-	<description>Patient seach app with sprintg boot</description>
+	<description>Patient search app with spring boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>

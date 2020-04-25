@@ -22,8 +22,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.base.MoreObjects;
 
-import io.swagger.annotations.ApiModelProperty;
-
 /**
  * A patient document object class which provides documents associated for each patient 
  */
